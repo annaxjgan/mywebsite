@@ -1,24 +1,75 @@
 <!DOCTYPE html> 
 <html> <!--the html document opening tag indicating where the code starts-->
     <head> <!--a tag containing the site's metadata-->
-        <title>
+        <title> 
             Anna's Website
-        </title> 
+        </title><!--defines the text shown on the browser tab when visiting the web page-->
     </head>
     <body> <!--contains all visible content on the web page-->
-        <header> Anna's Website </header> <!--container for introductory content or navigation-->
+        <header> Anna Gan </header> <!--container for introductory content or navigation-->
         <main>
+            <p> In the works...</p>
+            <!--a href="https://www.youtube.com" target="_blank"> 
+                <button>Click Here</button>
+            </a> <!--this represents an anchor element (a link to another website)needs https to form a proper URL, without it browser would treat it as a relative path-->
+            <!--href is an html attribute, it modifies how an element behaves-->
+            <!--target attribute determines where the page opens-->
             <div class="row"> <!--defines a section in an HTML document--> 
                 <div class="post-text-box">
-                    
+
                 </div>
                 <div class="profile">
-                    
+
                 </div>
             </div>
         </main> <!--represents the primary content of a web page-->
-        <footer> <!--contains the content displayed at the bottom of your website-->
-
-        </footer>
+        <footer> 
+            <div class="footer-heading">Get in Touch</div>
+            <a href="mailto:annaxjgan@gmail.com">
+                <img src="https://example.com/path-to-gmail-icon.png" alt="Gmail Icon">
+            </a>
+            <a href="https://www.linkedin.com/in/annagan/" target="_blank">
+                <img src="https://example.com/path-to-linkedin-icon.png" alt="LinkedIn Icon">
+            </a>
+            
+        </footer> <!--contains the content displayed at the bottom of your website-->
     </body>
 </html>
+
+<style>
+    header{
+        display: flex;
+        justify-content: center;
+        height: 10vh;
+        align-items: center;
+        font-size: 45px;
+        font-family:'SF Pro Text', "SF Pro Icons", Helvetica, Verdana, sans-serif;
+        letter-spacing: 3px;
+        background-color: white;
+        color: #000000CC;
+        border-bottom: solid 1px;
+        position: relative; /* Needed for absolute positioning of pseudo-element */
+        width: 85%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    
+    }
+    body{
+        background-color: white;
+        color:#000000CC;
+    }
+    p{
+        display: flex;
+        justify-content: center;
+        height: 50vh;
+        align-items: center;
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-family:'SF Pro Text', "SF Pro Icons", Helvetica, Verdana, sans-serif;
+    }
+    .footer-heading{
+        font-family:'SF Pro Text', "SF Pro Icons", Helvetica, Verdana, sans-serif;
+        height: 5vh;
+    }
+    
+</style>
